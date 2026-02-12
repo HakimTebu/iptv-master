@@ -1,0 +1,47 @@
+// Maps country names to their flag emojis
+const countryFlags: Record<string, string> = {
+    'albania': '🇦🇱', 'algeria': '🇩🇿', 'andorra': '🇦🇩', 'argentina': '🇦🇷',
+    'armenia': '🇦🇲', 'australia': '🇦🇺', 'austria': '🇦🇹', 'azerbaijan': '🇦🇿',
+    'bahrain': '🇧🇭', 'bangladesh': '🇧🇩', 'belarus': '🇧🇾', 'belgium': '🇧🇪',
+    'bolivia': '🇧🇴', 'bosnia and herzegovina': '🇧🇦', 'brazil': '🇧🇷',
+    'bulgaria': '🇧🇬', 'cameroon': '🇨🇲', 'canada': '🇨🇦', 'chad': '🇹🇩',
+    'chile': '🇨🇱', 'china': '🇨🇳', 'colombia': '🇨🇴', 'costa rica': '🇨🇷',
+    'croatia': '🇭🇷', 'cuba': '🇨🇺', 'cyprus': '🇨🇾', 'czech republic': '🇨🇿',
+    'denmark': '🇩🇰', 'dominican republic': '🇩🇴', 'ecuador': '🇪🇨',
+    'egypt': '🇪🇬', 'el salvador': '🇸🇻', 'estonia': '🇪🇪', 'ethiopia': '🇪🇹',
+    'faroe islands': '🇫🇴', 'finland': '🇫🇮', 'france': '🇫🇷',
+    'georgia': '🇬🇪', 'germany': '🇩🇪', 'ghana': '🇬🇭', 'greece': '🇬🇷',
+    'greenland': '🇬🇱', 'guatemala': '🇬🇹', 'honduras': '🇭🇳',
+    'hong kong': '🇭🇰', 'hungary': '🇭🇺', 'iceland': '🇮🇸', 'india': '🇮🇳',
+    'indonesia': '🇮🇩', 'iran': '🇮🇷', 'iraq': '🇮🇶', 'ireland': '🇮🇪',
+    'israel': '🇮🇱', 'italy': '🇮🇹', 'ivory coast': '🇨🇮', 'jamaica': '🇯🇲',
+    'japan': '🇯🇵', 'jordan': '🇯🇴', 'kazakhstan': '🇰🇿', 'kenya': '🇰🇪',
+    'korea': '🇰🇷', 'south korea': '🇰🇷', 'north korea': '🇰🇵',
+    'kosovo': '🇽🇰', 'kuwait': '🇰🇼', 'kyrgyzstan': '🇰🇬',
+    'latvia': '🇱🇻', 'lebanon': '🇱🇧', 'libya': '🇱🇾', 'liechtenstein': '🇱🇮',
+    'lithuania': '🇱🇹', 'luxembourg': '🇱🇺', 'macau': '🇲🇴', 'malaysia': '🇲🇾',
+    'malta': '🇲🇹', 'mexico': '🇲🇽', 'moldova': '🇲🇩', 'monaco': '🇲🇨',
+    'mongolia': '🇲🇳', 'montenegro': '🇲🇪', 'morocco': '🇲🇦', 'myanmar': '🇲🇲',
+    'nepal': '🇳🇵', 'netherlands': '🇳🇱', 'new zealand': '🇳🇿',
+    'nicaragua': '🇳🇮', 'nigeria': '🇳🇬', 'north macedonia': '🇲🇰',
+    'norway': '🇳🇴', 'oman': '🇴🇲', 'pakistan': '🇵🇰', 'palestine': '🇵🇸',
+    'panama': '🇵🇦', 'paraguay': '🇵🇾', 'peru': '🇵🇪', 'philippines': '🇵🇭',
+    'poland': '🇵🇱', 'portugal': '🇵🇹', 'qatar': '🇶🇦', 'romania': '🇷🇴',
+    'russia': '🇷🇺', 'san marino': '🇸🇲', 'saudi arabia': '🇸🇦',
+    'senegal': '🇸🇳', 'serbia': '🇷🇸', 'singapore': '🇸🇬', 'slovakia': '🇸🇰',
+    'slovenia': '🇸🇮', 'somalia': '🇸🇴', 'south africa': '🇿🇦', 'spain': '🇪🇸',
+    'sri lanka': '🇱🇰', 'sudan': '🇸🇩', 'sweden': '🇸🇪', 'switzerland': '🇨🇭',
+    'syria': '🇸🇾', 'taiwan': '🇹🇼', 'tajikistan': '🇹🇯', 'tanzania': '🇹🇿',
+    'thailand': '🇹🇭', 'trinidad and tobago': '🇹🇹', 'tunisia': '🇹🇳',
+    'turkey': '🇹🇷', 'turkmenistan': '🇹🇲', 'uganda': '🇺🇬', 'ukraine': '🇺🇦',
+    'united arab emirates': '🇦🇪', 'uae': '🇦🇪',
+    'united kingdom': '🇬🇧', 'uk': '🇬🇧',
+    'united states': '🇺🇸', 'usa': '🇺🇸',
+    'uruguay': '🇺🇾', 'uzbekistan': '🇺🇿', 'venezuela': '🇻🇪',
+    'vietnam': '🇻🇳', 'yemen': '🇾🇪', 'zambia': '🇿🇲', 'zimbabwe': '🇿🇼',
+};
+
+export function getFlag(countryName: string): string {
+    const key = countryName.toLowerCase().trim();
+    return countryFlags[key] || '🌐';
+}

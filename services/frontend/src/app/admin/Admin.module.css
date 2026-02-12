@@ -1,0 +1,146 @@
+.container {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.titleArea {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon {
+    color: var(--accent);
+}
+
+.statusBadge {
+    background: rgba(34, 197, 94, 0.1);
+    color: #22c55e;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border: 1px solid rgba(34, 197, 94, 0.2);
+}
+
+.statsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.statCard {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.statIcon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent);
+}
+
+.statInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.value {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.trendingSection {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 25px;
+}
+
+.sectionHeader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.trendingList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.trendingItem {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 10px;
+    transition: var(--transition);
+}
+
+.trendingItem:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.rank {
+    width: 30px;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.channelName {
+    flex: 1;
+    font-weight: 600;
+}
+
+.watchTime {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 1.1rem;
+}
+
+.errorContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    color: #ef4444;
+    text-align: center;
+    gap: 20px;
+}
